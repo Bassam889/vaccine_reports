@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Vacinne Report</title>
+    <script src="https://kit.fontawesome.com/e67f77956f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>introduce the information</h1>
+        </div>
+            <form class="form" id="form">
+            <div class="form-control">
+                <label>Initial Stock:</label>
+                <input type="text"id="initial-stock" placeholder="Enter a digit please">
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error message</small>  
+            </div>
+                <br>
+                <button id="new-button" type="submit">New</button>
+                <button id="enter-button" type="submit">Enter</button>
+                <button id="exit-button" type="submit">Exit</button>
+                <h1>Available</h1>
+            <div class="form-control">
+                <label for="stock">Stock:</label>
+                <input type="text" name="stock" id="final-stock" disabled>
+            </div>
+                <br>
+            <div class="form-control">
+                <label for="amount">Amount of people:</label>
+                <input type="text" name="amount" id="amount-people" disabled>
+            </div>
+            </form>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
